@@ -4,12 +4,12 @@ import { Star } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Minh Anh",
-      location: "Hà Nội",
+      name: "Thuý Hằng",
+      location: "Bình Định",
       rating: 5,
       comment:
         "App rất tiện lợi! Đã giúp tôi lên kế hoạch du lịch Đà Nẵng 3 ngày 2 đêm một cách hoàn hảo. Tuyến đường được đề xuất rất tối ưu.",
-      avatar: "MA",
+      avatar: "TH",
     },
     {
       name: "Hoàng Long",
@@ -20,12 +20,12 @@ const Testimonials = () => {
       avatar: "HL",
     },
     {
-      name: "Thu Hương",
-      location: "Đà Nẵng",
+      name: "Nam Anh",
+      location: "Quảng Trị",
       rating: 5,
       comment:
         "Hệ thống nhiệm vụ và thưởng rất thú vị! Khuyến khích tôi khám phá nhiều địa điểm mới và có những trải nghiệm tuyệt vời.",
-      avatar: "TH",
+      avatar: "NA",
     },
   ];
 
@@ -53,7 +53,7 @@ const Testimonials = () => {
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star
                       key={i}
-                      className="h-5 w-5 fill-primary text-primary"
+                      className="h-5 w-5 fill-amber-300 text-amber-300"
                     />
                   ))}
                 </div>

@@ -1,3 +1,5 @@
+"use client";
+
 import {
   MapPin,
   Mail,
@@ -6,6 +8,7 @@ import {
   Instagram,
   Twitter,
 } from "lucide-react";
+import SmoothScrollLink from "./SmoothScrollLink";
 
 const Footer = () => {
   return (
@@ -44,24 +47,36 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2 text-muted-foreground">
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <SmoothScrollLink
+                  href="#"
+                  className="hover:text-primary transition-colors"
+                >
                   Tính năng
-                </a>
+                </SmoothScrollLink>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <SmoothScrollLink
+                  href="#"
+                  className="hover:text-primary transition-colors"
+                >
                   Bản đồ
-                </a>
+                </SmoothScrollLink>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <SmoothScrollLink
+                  href="#"
+                  className="hover:text-primary transition-colors"
+                >
                   Tối ưu tuyến đường
-                </a>
+                </SmoothScrollLink>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <SmoothScrollLink
+                  href="#"
+                  className="hover:text-primary transition-colors"
+                >
                   Hệ thống thưởng
-                </a>
+                </SmoothScrollLink>
               </li>
             </ul>
           </div>
@@ -70,24 +85,36 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4 text-primary">Hỗ trợ</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <SmoothScrollLink
+                  href="#"
+                  className="hover:text-primary transition-colors"
+                >
                   Trung tâm trợ giúp
-                </a>
+                </SmoothScrollLink>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <SmoothScrollLink
+                  href="#"
+                  className="hover:text-primary transition-colors"
+                >
                   Hướng dẫn sử dụng
-                </a>
+                </SmoothScrollLink>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <SmoothScrollLink
+                  href="#"
+                  className="hover:text-primary transition-colors"
+                >
                   FAQ
-                </a>
+                </SmoothScrollLink>
               </li>
               <li>
-                <a href="#" className="hover:text-primary transition-colors">
+                <SmoothScrollLink
+                  href="#"
+                  className="hover:text-primary transition-colors"
+                >
                   Liên hệ
-                </a>
+                </SmoothScrollLink>
               </li>
             </ul>
           </div>

@@ -49,7 +49,7 @@ const AppPreview = () => {
               ✨ Giao diện thân thiện
             </Badge>
 
-            <h2 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-travel-ocean bg-clip-text text-transparent">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-travel-ocean bg-clip-text text-transparent leading-tight">
               Trải Nghiệm
               <br />
               Hoàn Hảo
