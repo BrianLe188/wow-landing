@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Menu, X } from "lucide-react";
 import { useState } from "react";
 import SmoothScrollLink from "./SmoothScrollLink";
+import Link from "next/link";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,9 +42,9 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost" className="text-primary">
+            <Link href="/sign-in" className="text-primary">
               Đăng nhập
-            </Button>
+            </Link>
             <Button variant="travel">Tải App</Button>
           </div>
 

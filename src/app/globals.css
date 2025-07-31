@@ -38,6 +38,18 @@
   --color-travel-blue-dark: hsl(var(--travel-blue-dark));
   --color-travel-sky: hsl(var(--travel-sky));
   --color-travel-ocean: hsl(var(--travel-ocean));
+  --color-travel-mint: hsl(var(--travel-mint));
+  --color-travel-lavender: hsl(var(--travel-lavender));
+  --color-travel-lavender-dark: hsl(var(--travel-lavender-dark));
+
+  --color-gradient-primary: var(--gradient-primary);
+  --color-gradient-secondary: var(--gradient-secondary);
+  --color-gradient-hero: var(--gradient-hero);
+  --color-gradient-card: var(--gradient-card);
+  --color-gradient-sunset: var(--gradient-sunset);
+  --color-gradient-ocean: var(--gradient-ocean);
+  --color-gradient-lavender: var(--gradient-lavender);
+  --color-gradient-mesh: var(--gradient-mesh);
 
   --color-sidebar: hsl(var(--sidebar-background));
   --color-sidebar-foreground: hsl(var(--sidebar-foreground));
@@ -101,23 +113,47 @@
   --gradient-primary: linear-gradient(
     135deg,
     hsl(var(--primary)),
-    hsl(var(--primary-light))
+    hsl(var(--travel-lavender))
+  );
+  --gradient-secondary: linear-gradient(
+    135deg,
+    hsl(var(--travel-lavender)),
+    hsl(var(--travel-lavender-dark))
   );
   --gradient-hero: linear-gradient(
     135deg,
-    hsl(var(--travel-blue)),
-    hsl(var(--travel-ocean))
+    hsl(var(--travel-sky)),
+    hsl(var(--primary)) 50%,
+    hsl(var(--travel-lavender))
   );
   --gradient-card: linear-gradient(
     145deg,
-    hsl(var(--background)),
-    hsl(var(--accent))
+    hsl(var(--card)),
+    hsl(var(--secondary))
   );
   --gradient-sunset: linear-gradient(
     135deg,
     hsl(var(--travel-coral)),
     hsl(var(--travel-sunset))
   );
+  --gradient-ocean: linear-gradient(
+    135deg,
+    hsl(var(--travel-blue)),
+    hsl(var(--travel-ocean))
+  );
+  --gradient-lavender: linear-gradient(
+    135deg,
+    hsl(var(--travel-lavender)),
+    hsl(var(--primary))
+  );
+  --gradient-mesh:
+    radial-gradient(at 40% 20%, hsl(var(--primary-glow)) 0px, transparent 50%),
+    radial-gradient(
+      at 80% 0%,
+      hsl(var(--travel-lavender)) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 0% 50%, hsl(var(--travel-mint)) 0px, transparent 50%);
 
   /* Shadows */
   --shadow-travel: 0 10px 30px -10px hsl(var(--primary) / 0.3);
@@ -171,6 +207,50 @@
   --border: 217.2 32.6% 17.5%;
   --input: 217.2 32.6% 17.5%;
   --ring: 212.7 26.8% 83.9%;
+  --sidebar-background: 240 5.9% 10%;
+  --sidebar-foreground: 240 4.8% 95.9%;
+  --sidebar-primary: 224.3 76.3% 48%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 240 3.7% 15.9%;
+  --sidebar-accent-foreground: 240 4.8% 95.9%;
+  --sidebar-border: 240 3.7% 15.9%;
+  --sidebar-ring: 217.2 91.2% 59.8%;
+
+  /* Dark mode travel colors */
+  --travel-blue: 210 100% 70%;
+  --travel-blue-light: 210 100% 80%;
+  --travel-blue-dark: 210 100% 50%;
+  --travel-sky: 195 80% 65%;
+  --travel-ocean: 200 90% 55%;
+  --travel-coral: 15 100% 65%;
+  --travel-sunset: 25 100% 55%;
+  --travel-mint: 165 50% 60%;
+  --travel-lavender: 270 60% 65%;
+  --travel-lavender-dark: 270 50% 45%;
+
+  /* Dark mode gradients */
+  --gradient-hero: linear-gradient(
+    135deg,
+    hsl(var(--background)),
+    hsl(var(--primary)) 50%,
+    hsl(var(--travel-lavender))
+  );
+  --gradient-mesh:
+    radial-gradient(
+      at 40% 20%,
+      hsl(var(--primary-glow) / 0.3) 0px,
+      transparent 50%
+    ),
+    radial-gradient(
+      at 80% 0%,
+      hsl(var(--travel-lavender) / 0.2) 0px,
+      transparent 50%
+    ),
+    radial-gradient(
+      at 0% 50%,
+      hsl(var(--travel-mint) / 0.2) 0px,
+      transparent 50%
+    );
   --sidebar-background: 240 5.9% 10%;
   --sidebar-foreground: 240 4.8% 95.9%;
   --sidebar-primary: 224.3 76.3% 48%;
